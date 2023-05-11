@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+   <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+<img src="{{url_for('static', filename='a.jpg')}}">
+<img src="{{url_for('static', filename='ooo.jpg')}}">
+<a href="{{ url_for ('home') }}">Back to Home</a></p>
+
+</body>
+</html>
