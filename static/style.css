@@ -7,3 +7,9 @@
     text-decoration: none;
     outline: 0;
     }
+
+    .centralize{
+        display:flex;
+        flex-direction: row;
+        justify-content:center;
+    }

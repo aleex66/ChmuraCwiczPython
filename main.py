@@ -6,7 +6,7 @@ from flask import render_template
 from flask import abort, url_for, make_response
 
 app = Flask(__name__)
-mail = Mail(app)
+'''ail = Mail(app)
 template = Template('Hello {{ name }}!')
 template.render(name='Aleex S')
 app.config['MAIL_SERVER']='smtp.gmail.com'
@@ -23,9 +23,9 @@ def index():
     msg.body = "Hello Flask message sent from Flask-Mail"
     mail.send(msg)
     return "Sent"
-
+'''
 @app.route('/')
-def home():
+def index():
     return render_template("index.html")
 
 
@@ -43,4 +43,4 @@ def aboutme():
     return render_template("aboutme.html")
 
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=8169)
