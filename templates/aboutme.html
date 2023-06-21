@@ -1,13 +1,13 @@
 {% extends "base.html" %}
-{% block title %} Contact {% endblock%}
+{% block title %} Contact {% endblock %}
 {% set active_page="contact"-%}
 {% block body %}
 <h1>HI!!</h1>
 <h3> My name is Alexandra and I'm 22. My passions are: playing the piano, programming - especially in C# in unity, VR/AR/MR.
-I also train calistenics and sometimes powerlifting. I like skaing and ice-skating - freestyle.
-I have 7 eyes on my arm and I'm quite shy. Hope you enjoy and have a good day!!</h3>
-<h4> Oh and also I organise esport tounaments. Check my site, click on the picture below!</h4>
+I also train calisthenics and sometimes powerlifting. I like skating and ice-skating - freestyle.
+I have 7 eyes on my arm, and I'm quite shy. Hope you enjoy and have a good day!!</h3>
+<h4> Oh and also I organise esport tournaments. Check my site, click on the picture below!</h4>
 <a href="https://lineupcup.pl"><img src="{{url_for('static', filename='logo.png')}}"></a>
-<a href="{{ url_for ('index') }}">Back to Home</a></p>
+<p><a href="{{ url_for ('index') }}">Back to Home</a></p>
     {% endblock %}
 

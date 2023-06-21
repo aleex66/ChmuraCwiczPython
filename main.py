@@ -23,7 +23,9 @@ def index():
     msg.body = "Hello Flask message sent from Flask-Mail"
     mail.send(msg)
     return "Sent"
-'''
+    '''
+
+
 @app.route('/')
 def index():
     return render_template("index.html")
@@ -38,9 +40,11 @@ def gallery():
 def contact():
     return render_template("contact.html")
 
+
 @app.route('/aboutme')
 def aboutme():
     return render_template("aboutme.html")
 
-if __name__=="__main__":
+
+if __name__ == "__main__":
     app.run(host='0.0.0.0', port=8169)
