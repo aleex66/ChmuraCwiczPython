@@ -6,7 +6,7 @@ from flask import render_template
 from flask import abort, url_for, make_response
 
 app = Flask(__name__)
-'''ail = Mail(app)
+'''mail = Mail(app)
 template = Template('Hello {{ name }}!')
 template.render(name='Aleex S')
 app.config['MAIL_SERVER']='smtp.gmail.com'
