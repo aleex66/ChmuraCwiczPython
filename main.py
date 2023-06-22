@@ -9,20 +9,20 @@ app = Flask(__name__)
 '''mail = Mail(app)
 template = Template('Hello {{ name }}!')
 template.render(name='Aleex S')
-app.config['MAIL_SERVER']='smtp.gmail.com'
+app.config['MAIL_SERVER']='sandbox.smtp.mailtrap.io'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] ='bombelekhurrdurr@gmail.com'
-app.config['MAIL_PASSWORD'] = 'zaq1@WSX'
+app.config['MAIL_USERNAME'] ='da3bed477b6fa7'
+app.config['MAIL_PASSWORD'] = 'cc0f75eed05411'
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 mail = Mail(app)
 
 @app.route("/")
 def index():
-    msg = Message('Hello', sender = 'bombelekhurrdurr@gmail.com', recipients = ['olisia.olcia@gmail.com'])
-    msg.body = "Hello Flask message sent from Flask-Mail"
+    msg = Message('Hello', sender = 'da3bed477b6fa7', recipients = ['olisia.olcia@gmail.com'])
+    msg.body = "Hello Flask message sent from Flask-Mail. Odbiór żołnierzu."
     mail.send(msg)
-    return "Sent"
+    return "Sent!"
     '''
 
 
